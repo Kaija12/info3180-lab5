@@ -8,6 +8,6 @@ app.config.from_object(Config)
 
 from app import views
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:kaija@localhost/info3180-lab5'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/info3180-lab5'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
